@@ -6,7 +6,7 @@
   <link href="https://nko-y.github.io/atom.xml" rel="self"/>
   
   <link href="https://nko-y.github.io/"/>
-  <updated>2024-07-14T12:54:55.404Z</updated>
+  <updated>2024-07-14T13:08:02.168Z</updated>
   <id>https://nko-y.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://nko-y.github.io/2024/07/03/anim01/"/>
     <id>https://nko-y.github.io/2024/07/03/anim01/</id>
     <published>2024-07-03T06:11:18.000Z</published>
-    <updated>2024-07-14T12:54:55.404Z</updated>
+    <updated>2024-07-14T13:08:02.168Z</updated>
     
-    <content type="html"><![CDATA[<p>通过采集重建18个人脸模型，重拓扑并对齐metahuman语义，优化mh人脸驱动，生成动态材质及Aomap贴图，最终生成可调节且表达自然的人脸驱动模型，用于视频数字人网络训练数据的生成</p><h4 id="一、结果演示">一、结果演示</h4><p>最终数字人的效果如下所示：</p><p><img src="/anim/show1.gif" alt="show1"></p>]]></content>
+    <content type="html"><![CDATA[<p>通过采集重建18个人脸模型，重拓扑并对齐metahuman语义，优化mh人脸驱动，生成动态材质及Aomap贴图，最终生成可调节且表达自然的人脸驱动模型，用于视频数字人网络训练数据的生成</p><h4 id="一、结果演示">一、结果演示</h4><p>最终数字人的效果如下所示：</p><table><thead><tr><th>静图</th><th>动图(使用了gif有色差)</th></tr></thead><tbody><tr><td><img src="/anim/show1.jpg" alt="show1" style="zoom:25%;" /></td><td><img src="/anim/show1.gif" alt="show1"></td></tr></tbody></table>]]></content>
     
     
     <summary type="html">通过采集重建18个人脸/身体模型，重拓扑并对齐metahuman语义，优化mh人脸驱动，生成动态材质及Aomap贴图，最终生成可调节且表达自然的人脸驱动模型，用于视频数字人网络训练数据的生成</summary>
