@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://nko-y.github.io/image/staircase_anim01.jpg">
 <meta property="article:published_time" content="2024-06-19T06:11:28.000Z">
-<meta property="article:modified_time" content="2024-07-14T07:16:57.031Z">
+<meta property="article:modified_time" content="2024-07-14T07:21:40.504Z">
 <meta property="article:author" content="nko-y">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://nko-y.github.io/image/staircase_anim01.jpg"><link rel="shortcut icon" href="/image/cloud.png"><link rel="canonical" href="https://nko-y.github.io/2024/06/19/render01/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
@@ -56,7 +56,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2024-07-14 15:16:57'
+  postUpdate: '2024-07-14 15:21:40'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -177,7 +177,7 @@ window.addEventListener('load',()=> { preloader.endLoading() })
 if (false) {
   document.addEventListener('pjax:send', () => { preloader.initLoading() })
   document.addEventListener('pjax:complete', () => { preloader.endLoading() })
-}</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/image/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/image/staircase_anim01.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="nko-y的个人主页"><span class="site-name">nko-y的个人主页</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">基于蒙特卡洛光线追踪的渲染器</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-06-19T06:11:28.000Z" title="发表于 2024-06-19 14:11:28">2024-06-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-14T07:16:57.031Z" title="更新于 2024-07-14 15:16:57">2024-07-14</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="基于蒙特卡洛光线追踪的渲染器"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="一、运行及说明"><a href="#一、运行及说明" class="headerlink" title="一、运行及说明"></a>一、运行及说明</h2><p>（1）本程序所使用的所有外部库均包含于include文件夹下，包括以下几部分：</p>
+}</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/image/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/image/staircase_anim01.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="nko-y的个人主页"><span class="site-name">nko-y的个人主页</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">基于蒙特卡洛光线追踪的渲染器</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-06-19T06:11:28.000Z" title="发表于 2024-06-19 14:11:28">2024-06-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-14T07:21:40.504Z" title="更新于 2024-07-14 15:21:40">2024-07-14</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="基于蒙特卡洛光线追踪的渲染器"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="一、运行及说明"><a href="#一、运行及说明" class="headerlink" title="一、运行及说明"></a>一、运行及说明</h2><p>（1）本程序所使用的所有外部库均包含于include文件夹下，包括以下几部分：</p>
 <ul>
 <li>glm：用于基本的数学和向量运算</li>
 <li>stb_image&#x2F;stb_image_write：用于纹理图片的读取以及最终图像的输出</li>
@@ -188,18 +188,18 @@ if (false) {
 <ul>
 <li>打开PT.sln项目，并将项目的包含目录添加到其中，在main函数中可以改变spp数量以及对应场景的存放路径</li>
 </ul>
-<img src=".\img\vsrun.png" alt="vsrun" style="zoom:40%;" />
+<img src="\img\vsrun.png" alt="vsrun" style="zoom:40%;" />
 
 <ul>
 <li>通过生成的PT.exe直接运行，如下所示打开控制台调用exe并输入图像路径和spp数量即可</li>
 </ul>
-<img src=".\img\cmdrun.png" alt="cmdrun" style="zoom:50%;" />
+<img src="\img\cmdrun.png" alt="cmdrun" style="zoom:50%;" />
 
 <p>（3）注意事项：</p>
 <ul>
 <li>场景相关资源(mtl、obj、xml)应当与文件名相同，从而保证程序能够正确读取有关资源</li>
 </ul>
-<img src=".\img\sourcename.png" alt="sourcename" style="zoom:50%;" />
+<img src="\img\sourcename.png" alt="sourcename" style="zoom:50%;" />
 
 <ul>
 <li>将材质中的Tr改成Kt，只有这样tiny_obj_loader才能正确地读入玻璃的transmission属性</li>
@@ -275,52 +275,52 @@ if (false) {
 <img src="\img\cornell-box\cornell-box_spp4.jpg" alt="cornell-box_spp4" style="zoom:100%;" />
 
 <p>【cornell-box 4spp】</p>
-<img src=".\img\cornell-box\cornell-box_spp32.jpg" alt="cornell-box_spp32" style="zoom:100%;" />
+<img src="\img\cornell-box\cornell-box_spp32.jpg" alt="cornell-box_spp32" style="zoom:100%;" />
 
 <p>【cornell-box 32spp】</p>
-<img src=".\img\cornell-box\cornell-box_spp256.jpg" alt="cornell-box_spp256" style="zoom:100%;" />
+<img src="\img\cornell-box\cornell-box_spp256.jpg" alt="cornell-box_spp256" style="zoom:100%;" />
 
 <p>【cornell-box 256spp】</p>
-<img src=".\img\cornell-box\cornell-box_spp4096.jpg" alt="cornell-box_spp4096" style="zoom:100%;" />
+<img src="\img\cornell-box\cornell-box_spp4096.jpg" alt="cornell-box_spp4096" style="zoom:100%;" />
 
 <p>【cornell-box 4096spp】</p>
 <p>（2）staircase：用于展示glass材质+diffuse材质</p>
-<img src=".\img\stairscase\stairscase_spp4.jpg" alt="stairscase_spp4" style="zoom:100%;" />
+<img src="\img\stairscase\stairscase_spp4.jpg" alt="stairscase_spp4" style="zoom:100%;" />
 
 <p>【staircase 4spp】</p>
-<img src=".\img\stairscase\stairscase_spp32.jpg" alt="stairscase_spp32" style="zoom:100%;" />
+<img src="\img\stairscase\stairscase_spp32.jpg" alt="stairscase_spp32" style="zoom:100%;" />
 
 <p>【staircase 32spp】</p>
-<img src=".\img\stairscase\stairscase_spp256.jpg" alt="stairscase_spp256" style="zoom:100%;" />
+<img src="\img\stairscase\stairscase_spp256.jpg" alt="stairscase_spp256" style="zoom:100%;" />
 
 <p>【staircase 256spp】</p>
-<img src=".\img\stairscase\stairscase_spp4096.jpg" alt="stairscase_spp4096" style="zoom:100%;" />
+<img src="\img\stairscase\stairscase_spp4096.jpg" alt="stairscase_spp4096" style="zoom:100%;" />
 
 <p>【staircase 4096spp】</p>
 <p>（3）veach-mis：用于展示diffuse+specular材质</p>
-<img src=".\img\veach-mis\veach-mis_spp4.jpg" alt="veach-mis_spp4" style="zoom:100%;" />
+<img src="\img\veach-mis\veach-mis_spp4.jpg" alt="veach-mis_spp4" style="zoom:100%;" />
 
 <p>【veach-mis 4spp】</p>
-<img src=".\img\veach-mis\veach-mis_spp32.jpg" alt="veach-mis_spp32" style="zoom:100%;" />
+<img src="\img\veach-mis\veach-mis_spp32.jpg" alt="veach-mis_spp32" style="zoom:100%;" />
 
 <p>【veach-mis 32spp】</p>
-<img src=".\img\veach-mis\veach-mis_spp256.jpg" alt="veach-mis_spp256" style="zoom:100%;" />
+<img src="\img\veach-mis\veach-mis_spp256.jpg" alt="veach-mis_spp256" style="zoom:100%;" />
 
 <p>【veach-mis 256spp】</p>
-<img src=".\img\veach-mis\veach-mis_spp4096.jpg" alt="veach-mis_spp4096" style="zoom:100%;" />
+<img src="\img\veach-mis\veach-mis_spp4096.jpg" alt="veach-mis_spp4096" style="zoom:100%;" />
 
 <p>【veach-mis 4096spp】</p>
 <p>（4）living-room：其他大场景</p>
-<img src=".\img\LivingRoom\living_room_spp4.jpg" alt="living_room_spp4" style="zoom:100%;" />
+<img src="\img\LivingRoom\living_room_spp4.jpg" alt="living_room_spp4" style="zoom:100%;" />
 
 <p>【living-room 4spp】</p>
-<img src=".\img\LivingRoom\living_room_spp32.jpg" alt="living_room_spp32" style="zoom:100%;" />
+<img src="\img\LivingRoom\living_room_spp32.jpg" alt="living_room_spp32" style="zoom:100%;" />
 
 <p>【living-room 32spp】</p>
-<img src=".\img\LivingRoom\living_room_spp256.jpg" alt="living_room_spp256" style="zoom:100%;" />
+<img src="\img\LivingRoom\living_room_spp256.jpg" alt="living_room_spp256" style="zoom:100%;" />
 
 <p>【living-room 256spp】</p>
-<img src=".\img\LivingRoom\living_room_spp2048.jpg" alt="living_room_spp2048" style="zoom:100%;" />
+<img src="\img\LivingRoom\living_room_spp2048.jpg" alt="living_room_spp2048" style="zoom:100%;" />
 
 <p>【living-room 2048spp】</p>
 </article><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/image/staircase_anim01.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/image/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">nko-y</div><div class="author-info__description">欸嘿~</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%BF%90%E8%A1%8C%E5%8F%8A%E8%AF%B4%E6%98%8E"><span class="toc-number">1.</span> <span class="toc-text">一、运行及说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%95%B4%E4%BD%93%E6%80%9D%E8%B7%AF%E5%92%8C%E7%B1%BB%E5%AE%9E%E7%8E%B0"><span class="toc-number">2.</span> <span class="toc-text">二、整体思路和类实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%B8%B2%E6%9F%93%E4%B8%BB%E5%BE%AA%E7%8E%AF%E5%92%8C%E9%87%87%E6%A0%B7%E6%96%B9%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">三、渲染主循环和采样方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%BB%93%E6%9E%9C%E5%B1%95%E7%A4%BA"><span class="toc-number">4.</span> <span class="toc-text">四、结果展示</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/03/anim01/" title="anim01">anim01</a><time datetime="2024-07-03T06:11:18.000Z" title="发表于 2024-07-03 14:11:18">2024-07-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/02/anim02/" title="anim02">anim02</a><time datetime="2024-07-02T06:23:15.000Z" title="发表于 2024-07-02 14:23:15">2024-07-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/01/anim03/" title="anim03">anim03</a><time datetime="2024-07-01T06:23:22.000Z" title="发表于 2024-07-01 14:23:22">2024-07-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/19/render01/" title="基于蒙特卡洛光线追踪的渲染器"><img src="/image/staircase_anim01.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于蒙特卡洛光线追踪的渲染器"/></a><div class="content"><a class="title" href="/2024/06/19/render01/" title="基于蒙特卡洛光线追踪的渲染器">基于蒙特卡洛光线追踪的渲染器</a><time datetime="2024-06-19T06:11:28.000Z" title="发表于 2024-06-19 14:11:28">2024-06-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/06/18/render02/" title="render02">render02</a><time datetime="2024-06-18T06:23:35.000Z" title="发表于 2024-06-18 14:23:35">2024-06-18</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By nko-y</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
