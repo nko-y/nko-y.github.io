@@ -7,7 +7,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://nko-y.github.io/anim/anim01_cover2.png">
 <meta property="article:published_time" content="2024-07-03T06:11:18.000Z">
-<meta property="article:modified_time" content="2024-07-14T13:08:02.168Z">
+<meta property="article:modified_time" content="2024-07-14T13:39:34.330Z">
 <meta property="article:author" content="nko-y">
 <meta property="article:tag" content="动画">
 <meta name="twitter:card" content="summary">
@@ -57,7 +57,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2024-07-14 21:08:02'
+  postUpdate: '2024-07-14 21:39:34'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -178,7 +178,7 @@ window.addEventListener('load',()=> { preloader.endLoading() })
 if (false) {
   document.addEventListener('pjax:send', () => { preloader.initLoading() })
   document.addEventListener('pjax:complete', () => { preloader.endLoading() })
-}</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/image/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/anim/anim01_cover2.png')"><nav id="nav"><span id="blog-info"><a href="/" title="nko-y的个人主页"><span class="site-name">nko-y的个人主页</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">【动画】一种基于稀疏表情优化人脸驱动及人脸材质的方法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-03T06:11:18.000Z" title="发表于 2024-07-03 14:11:18">2024-07-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-14T13:08:02.168Z" title="更新于 2024-07-14 21:08:02">2024-07-14</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="【动画】一种基于稀疏表情优化人脸驱动及人脸材质的方法"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>通过采集重建18个人脸模型，重拓扑并对齐metahuman语义，优化mh人脸驱动，生成动态材质及Aomap贴图，最终生成可调节且表达自然的人脸驱动模型，用于视频数字人网络训练数据的生成</p>
+}</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/image/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/anim/anim01_cover2.png')"><nav id="nav"><span id="blog-info"><a href="/" title="nko-y的个人主页"><span class="site-name">nko-y的个人主页</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">【动画】一种基于稀疏表情优化人脸驱动及人脸材质的方法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-03T06:11:18.000Z" title="发表于 2024-07-03 14:11:18">2024-07-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-14T13:39:34.330Z" title="更新于 2024-07-14 21:39:34">2024-07-14</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="【动画】一种基于稀疏表情优化人脸驱动及人脸材质的方法"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>通过采集重建18个人脸模型，重拓扑并对齐metahuman语义，优化mh人脸驱动，生成动态材质及Aomap贴图，最终生成可调节且表达自然的人脸驱动模型，用于视频数字人网络训练数据的生成</p>
 <h4 id="一、结果演示">一、结果演示</h4>
 <p>最终数字人的效果如下所示：</p>
 <table>
@@ -192,6 +192,23 @@ if (false) {
 <tr>
 <td><img src="/anim/show1.jpg" alt="show1" style="zoom:25%;" /></td>
 <td><img src="/anim/show1.gif" alt="show1"></td>
+</tr>
+</tbody>
+</table>
+<p>side by side的对比图如下所示：</p>
+<table>
+<thead>
+<tr>
+<th>example1</th>
+<th>example2</th>
+<th>example3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="/anim/show2.gif" alt="show2"></td>
+<td><img src="/anim/show3.gif" alt="show3"></td>
+<td><img src="/anim/show4.gif" alt="show4"></td>
 </tr>
 </tbody>
 </table>
