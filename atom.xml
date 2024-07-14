@@ -94,9 +94,9 @@
     <link href="https://nko-y.github.io/2024/05/22/game01/"/>
     <id>https://nko-y.github.io/2024/05/22/game01/</id>
     <published>2024-05-22T06:12:01.000Z</published>
-    <updated>2024-07-14T08:58:28.194Z</updated>
+    <updated>2024-07-14T09:05:39.958Z</updated>
     
-    <content type="html"><![CDATA[<!-- <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1203287467&bvid=BV1DF4m1A7Gb&cid=1510742589&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe> --><iframe      width="100%"      height="450"      src=/game/bifang.mp4      scrolling="no"      border="0"      frameborder="no"      framespacing="0"      allowfullscreen="true"> </iframe> ]]></content>
+    <content type="html"><![CDATA[<!-- <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1203287467&bvid=BV1DF4m1A7Gb&cid=1510742589&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe> --><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1203287467&bvid=BV1DF4m1A7Gb&cid=1510742589&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>]]></content>
     
     
     <summary type="html">2023网易雷火开发大赛二等奖作品。世间万物皆蕴含无限状态，拨动象征着概率的时钟，探索隐秘的世界</summary>
