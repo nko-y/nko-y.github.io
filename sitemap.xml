@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://nko-y.github.io/2024/07/03/anim01/</loc>
+    
+    <lastmod>2024-07-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://nko-y.github.io/2024/05/22/game01/</loc>
     
     <lastmod>2024-07-14</lastmod>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>https://nko-y.github.io/2024/06/19/render01/</loc>
-    
-    <lastmod>2024-07-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://nko-y.github.io/2024/07/03/anim01/</loc>
     
     <lastmod>2024-07-14</lastmod>
     
