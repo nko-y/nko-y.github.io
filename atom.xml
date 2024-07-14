@@ -97,12 +97,12 @@
     <link href="https://nko-y.github.io/2024/06/18/render02/"/>
     <id>https://nko-y.github.io/2024/06/18/render02/</id>
     <published>2024-06-18T06:23:35.000Z</published>
-    <updated>2024-07-14T17:11:38.829Z</updated>
+    <updated>2024-07-14T17:15:58.899Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、Hierarchy-Z-Buffer">一、Hierarchy Z-Buffer</h2><h2 id="二、《FLYING-GLIDER》">二、《FLYING GLIDER》</h2><p>使用OpenGL编写的一个控制滑翔翼在山间漫游的小游戏，参见 <a href="https://github.com/nko-y/FLYING-GLIDER">https://github.com/nko-y/FLYING-GLIDER</a></p><ol><li>参考LearningOpenGL一书搭建游戏的框架，包括简单的渲染管线、obj模型读入、视角变换、纹理编辑等基本功能</li><li>实现了Blinn-Phong、Shadow Map+PCF、碰撞检测、雾化等基本算法和效果</li><li>利用三角形网格和HeightMap对地形进行生成</li></ol><p><img src="/render/extra2.png" alt="extra2"></p><h2 id="三、《Disco-Room》">三、《Disco Room》</h2><p>参见：<a href="https://www.shadertoy.com/view/ftSXDR">https://www.shadertoy.com/view/ftSXDR</a></p>]]></content>
     
     
-    <summary type="html">包括层次Z-Buffer实现，OpenGL编写的漫游小游戏,shadertoy上的DiscoRoom小场景</summary>
+    <summary type="html">包括层次Z-Buffer实现，OpenGL编写的漫游小游戏，shadertoy上的DiscoRoom小场景</summary>
     
     
     
