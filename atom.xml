@@ -6,7 +6,7 @@
   <link href="https://nko-y.github.io/atom.xml" rel="self"/>
   
   <link href="https://nko-y.github.io/"/>
-  <updated>2024-07-14T12:34:27.539Z</updated>
+  <updated>2024-07-14T12:39:22.949Z</updated>
   <id>https://nko-y.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://nko-y.github.io/2024/07/03/anim01/"/>
     <id>https://nko-y.github.io/2024/07/03/anim01/</id>
     <published>2024-07-03T06:11:18.000Z</published>
-    <updated>2024-07-14T12:34:27.539Z</updated>
+    <updated>2024-07-14T12:39:22.949Z</updated>
     
     <content type="html"><![CDATA[<p>通过采集重建18个人脸模型，重拓扑并对齐metahuman语义，优化mh人脸驱动，生成动态材质及Aomap贴图，最终生成可调节且表达自然的人脸驱动模型，用于视频数字人网络训练数据的生成</p>]]></content>
     
