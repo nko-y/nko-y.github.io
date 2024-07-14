@@ -6,7 +6,7 @@
   <link href="https://nko-y.github.io/atom.xml" rel="self"/>
   
   <link href="https://nko-y.github.io/"/>
-  <updated>2024-07-14T14:52:19.989Z</updated>
+  <updated>2024-07-14T14:54:46.008Z</updated>
   <id>https://nko-y.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://nko-y.github.io/2024/07/03/anim01/"/>
     <id>https://nko-y.github.io/2024/07/03/anim01/</id>
     <published>2024-07-03T06:11:18.000Z</published>
-    <updated>2024-07-14T14:52:19.989Z</updated>
+    <updated>2024-07-14T14:54:46.008Z</updated>
     
-    <content type="html"><![CDATA[<p>通过采集重建18个人脸模型，重拓扑并对齐metahuman语义，优化mh人脸驱动，生成动态材质及Aomap贴图，最终生成可调节且表达自然的人脸驱动模型，用于视频数字人网络训练数据的生成</p><h2 id="一、结果演示">一、结果演示</h2><p>最终数字人的效果如下所示：</p><table><thead><tr><th>静图</th><th>动图(使用了gif有色差)</th></tr></thead><tbody><tr><td><img src="/anim/show1.jpg" alt="show1" style="zoom:25%;" /></td><td><img src="/anim/show1.gif" alt="show1"></td></tr></tbody></table><p>side by side的对比图如下所示：</p><table><thead><tr><th>example1</th><th>example2</th><th>example3</th></tr></thead><tbody><tr><td><img src="/anim/show2.gif" alt="show2"></td><td><img src="/anim/show3.gif" alt="show3"></td><td><img src="/anim/show4.gif" alt="show4"></td></tr></tbody></table><h2 id="二、采集重建及网格重拓扑">二、采集重建及网格重拓扑</h2><p>（1）通过多视角相机及Kinect深度相机，采集重建人脸获得18个表情下的模型及人体模型。</p><p>（2）将人脸模型重拓扑为metahuman拓扑并对齐语义，并重新烘焙材质</p><table><thead><tr><th>拓扑对齐后的几何(18个中的两个)</th><th>烘焙后的材质(18个模型每个五张)</th></tr></thead><tbody><tr><td><img src="/anim/geo.jpg" alt="geo"></td><td><img src="/anim/material.jpg" alt="material"></td></tr></tbody></table><h2 id="三、人脸关节驱动优化">三、人脸关节驱动优化</h2><p>优化流程如下</p><img src="/anim/process.png" alt="process" style="zoom:30%;" /><p>对应区域优化完成后移动控制器更能表达出人脸的细节变化</p><p><img src="/anim/cmp_afterprocess.png" alt="cmp_afterprocess"></p><h3 id="四、动态材质生成">四、动态材质生成</h3><p>（1）根据18张原始材质对Albedo、Diffuse、DetailNormal材质分别生成4张包含各种表情细节的动态材质，用于后续材质间的实时混合</p><p><img src="/anim/dynamic.png" alt="dynamic"></p><p>（2）并从图像中提取Aomap进一步添加脸部细节</p><table><thead><tr><th>录制视频帧</th><th>提取得到的Aomap</th></tr></thead><tbody><tr><td><img src="/anim/aoori.png" alt="aoori" style="zoom:50%;" /></td><td><img src="/anim/aomap.png" alt="aomap" style="zoom:50%;" /></td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<p>通过采集重建18个人脸模型，重拓扑并对齐metahuman语义，优化mh人脸驱动，生成动态材质及Aomap贴图，最终生成可调节且表达自然的人脸驱动模型，用于视频数字人网络训练数据的生成</p><h2 id="一、结果演示">一、结果演示</h2><p>最终数字人的效果如下所示：</p><table><thead><tr><th>静图</th><th>动图(使用了gif有色差)</th></tr></thead><tbody><tr><td><img src="/anim/show1.jpg" alt="show1" style="zoom:25%;" /></td><td><img src="/anim/show1.gif" alt="show1"></td></tr></tbody></table><p>side by side的对比图如下所示：</p><table><thead><tr><th>example1</th><th>example2</th><th>example3</th></tr></thead><tbody><tr><td><img src="/anim/show2.gif" alt="show2"></td><td><img src="/anim/show3.gif" alt="show3"></td><td><img src="/anim/show4.gif" alt="show4"></td></tr></tbody></table><h2 id="二、采集重建及网格重拓扑">二、采集重建及网格重拓扑</h2><p>（1）通过多视角相机及Kinect深度相机，采集重建人脸获得18个表情下的模型及人体模型。</p><p>（2）将人脸模型重拓扑为metahuman拓扑并对齐语义，并重新烘焙材质</p><table><thead><tr><th>拓扑对齐后的几何(18个中的两个)</th><th>烘焙后的材质(18个模型每个五张)</th></tr></thead><tbody><tr><td><img src="/anim/geo.jpg" alt="geo"></td><td><img src="/anim/material.jpg" alt="material"></td></tr></tbody></table><h2 id="三、人脸关节驱动优化">三、人脸关节驱动优化</h2><p>优化流程如下</p><img src="/anim/process.png" alt="process" style="zoom:30%;" /><p>对应区域优化完成后移动控制器更能表达出人脸的细节变化</p><p><img src="/anim/cmp_afterprocess.png" alt="cmp_afterprocess"></p><h2 id="四、动态材质生成">四、动态材质生成</h2><p>（1）根据18张原始材质对Albedo、Diffuse、DetailNormal材质分别生成4张包含各种表情细节的动态材质，用于后续材质间的实时混合</p><p><img src="/anim/dynamic.png" alt="dynamic"></p><p>（2）并从图像中提取Aomap进一步添加脸部细节</p><table><thead><tr><th>录制视频帧</th><th>提取得到的Aomap</th></tr></thead><tbody><tr><td><img src="/anim/aoori.png" alt="aoori" style="zoom:50%;" /></td><td><img src="/anim/aomap.png" alt="aomap" style="zoom:50%;" /></td></tr></tbody></table>]]></content>
     
     
     <summary type="html">通过采集重建18个人脸/身体模型，重拓扑并对齐metahuman语义，优化mh人脸驱动，生成动态材质及Aomap贴图，最终生成可调节且表达自然的人脸驱动模型，用于视频数字人网络训练数据的生成</summary>
@@ -36,15 +36,21 @@
   </entry>
   
   <entry>
-    <title>anim02</title>
+    <title>【动画】数字人自动绑定及姿态迁移</title>
     <link href="https://nko-y.github.io/2024/07/02/anim02/"/>
     <id>https://nko-y.github.io/2024/07/02/anim02/</id>
     <published>2024-07-02T06:23:15.000Z</published>
-    <updated>2024-07-14T06:33:10.857Z</updated>
+    <updated>2024-07-14T15:27:24.774Z</updated>
+    
+    <content type="html"><![CDATA[<p>复现并改进论文方法实现快速定位骨骼位置、生成蒙皮数据、迁移数据库姿态</p><h2 id="一、关节位置生成">一、关节位置生成</h2><p>独立复现论文 Mean value coordinates for closed triangular meshes,并将其思想应用于关节位置生成</p><h2 id="二、蒙皮数据生成">二、蒙皮数据生成</h2><p>独立复现论文 Frankenrigs: Building Character Rigs From Multiple Sources, 并将其改进版本用于权重匹配</p><h3 id="三、姿态迁移">三、姿态迁移</h3><p>独立复现论文 Spatial Relationship Preserving Character Motion Adaptation, 并将其改进穿模版本应用于姿态迁移</p>]]></content>
+    
+    
+    <summary type="html">复现并改进论文方法实现快速定位骨骼位置、生成蒙皮数据、迁移数据库姿态</summary>
     
     
     
     
+    <category term="动画" scheme="https://nko-y.github.io/tags/%E5%8A%A8%E7%94%BB/"/>
     
   </entry>
   
