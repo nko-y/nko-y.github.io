@@ -59,9 +59,9 @@
     <link href="https://nko-y.github.io/2024/07/01/anim03/"/>
     <id>https://nko-y.github.io/2024/07/01/anim03/</id>
     <published>2024-07-01T06:23:22.000Z</published>
-    <updated>2024-07-14T16:33:26.957Z</updated>
+    <updated>2024-07-14T16:38:25.605Z</updated>
     
-    <content type="html"><![CDATA[<p>复刻类似战神一样基于骨骼的肌肉皮肤动画，并在UE5中实现肌肉的Jiggle效果</p><h2 id="一、肌肉骨骼组说明">一、肌肉骨骼组说明</h2><p>如下图所示，肌肉骨骼组大致由四部分组成：</p><ul><li>在图中以蓝色标识的组，包括OriginLoc、InsertionLoc、muscleOrigin与muscleInsertion</li><li>在图中以绿色标识的组。包括muscleBase和muscleTip</li></ul><p>以上两组用于模拟肌肉两端，也就是它们会随着基础骨骼运动而发生位移。</p><p>此外，以下两组用于模拟肌肉中心：</p><ul><li><p>在图中以红色标识的组，包括muscleDriven</p></li><li><p>在图中以黄色标识的组，包括center_Loc与muscleJnt</p></li></ul><p>当用于模拟肌肉两端的组发生位移时，这两组将会随之进行位移和放缩，从而模拟肌肉中心的拉伸和挤压</p><p><img src="/anim/anim03_joint.png" alt="anim03_joint"></p><h2 id="二、上身肌肉组生成及迁移">二、上身肌肉组生成及迁移</h2><p>参考战神实现上半身的肌肉骨骼组</p><table><thead><tr><th>肌肉骨骼组</th><th>绑定示意</th></tr></thead><tbody><tr><td><img src="/anim/anim03_musclegroup.png" alt="anim03_musclegroup" style="zoom:50%;" /></td><td><img src="/anim/anim03_all.png" alt="anim03_all" style="zoom:50%;" /></td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<p>复刻类似战神一样基于骨骼的肌肉皮肤动画，并在UE5中实现肌肉的Jiggle效果</p><h2 id="一、肌肉骨骼组说明">一、肌肉骨骼组说明</h2><p>如下图所示，肌肉骨骼组大致由四部分组成：</p><ul><li>在图中以蓝色标识的组，包括OriginLoc、InsertionLoc、muscleOrigin与muscleInsertion</li><li>在图中以绿色标识的组。包括muscleBase和muscleTip</li></ul><p>以上两组用于模拟肌肉两端，也就是它们会随着基础骨骼运动而发生位移。</p><p>此外，以下两组用于模拟肌肉中心：</p><ul><li><p>在图中以红色标识的组，包括muscleDriven</p></li><li><p>在图中以黄色标识的组，包括center_Loc与muscleJnt</p></li></ul><p>当用于模拟肌肉两端的组发生位移时，这两组将会随之进行位移和放缩，从而模拟肌肉中心的拉伸和挤压</p><p><img src="/anim/anim03_joint.png" alt="anim03_joint"></p><h2 id="二、上身肌肉组生成及迁移">二、上身肌肉组生成及迁移</h2><p>参考战神实现上半身的肌肉骨骼组</p><table><thead><tr><th>肌肉骨骼组</th><th>绑定示意</th></tr></thead><tbody><tr><td><img src="/anim/anim03_musclegroup.png" alt="anim03_musclegroup" style="zoom:50%;" /></td><td><img src="/anim/anim03_all.png" alt="anim03_all" style="zoom:50%;" /></td></tr></tbody></table><p>该肌肉骨骼组根据迁移算法可自由迁移至其他角色</p><img src="/anim/anim03_transfer.gif" alt="anim03_transfer" style="zoom:80%;" />]]></content>
     
     
     <summary type="html">复刻类似战神一样基于骨骼的肌肉皮肤动画，并在UE5中实现肌肉的Jiggle效果</summary>
