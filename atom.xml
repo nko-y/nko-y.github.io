@@ -40,9 +40,9 @@
     <link href="https://nko-y.github.io/2024/07/02/anim02/"/>
     <id>https://nko-y.github.io/2024/07/02/anim02/</id>
     <published>2024-07-02T06:23:15.000Z</published>
-    <updated>2024-07-14T15:47:55.015Z</updated>
+    <updated>2024-07-14T17:32:10.850Z</updated>
     
-    <content type="html"><![CDATA[<p>复现并改进论文方法实现快速定位骨骼位置、生成蒙皮数据、迁移数据库姿态</p><h2 id="一、关节位置生成">一、关节位置生成</h2><p>独立复现论文 Mean value coordinates for closed triangular meshes，并将其思想应用于关节位置生成。主要思想是从模板上计算一个MVC矩阵并将该矩阵用于目标人体的关节位置生成。</p><img src="/anim/mvc_rig.png" alt="mvc_rig" style="zoom:50%;" /><h2 id="二、蒙皮数据生成">二、蒙皮数据生成</h2><p>独立复现论文 Frankenrigs: Building Character Rigs From Multiple Sources, 并将其改进版本用于权重匹配。主要包含权重映射(下图左)、权重优化(下图中)、平滑扩散(下图右)三步</p><p><img src="/anim/anim02_skinning.png" alt="anim02_skinning"></p><h3 id="三、姿态迁移">三、姿态迁移</h3><p>独立复现论文 Spatial Relationship Preserving Character Motion Adaptation, 并将其改进穿模版本应用于姿态迁移。主要思想是以关节点位置构建laplace矩阵，并以每个关节laplace坐标及自相交/近相加的顶点对距离为能量函数进行优化。</p><table><thead><tr><th>参考姿态</th><th>迁移姿态</th></tr></thead><tbody><tr><td><img src="/anim/anim02_refpose.png" alt="anim02_refpose" style="zoom:50%;" /></td><td><img src="/anim/anim01_tarpose.png" alt="anim01_tarpose" style="zoom:50%;" /></td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<p>复现并改进论文方法实现快速定位骨骼位置、生成蒙皮数据、迁移数据库姿态</p><h2 id="一、关节位置生成">一、关节位置生成</h2><p>独立复现论文 Mean value coordinates for closed triangular meshes，并将其思想应用于关节位置生成。主要思想是从模板上计算一个MVC矩阵并将该矩阵用于目标人体的关节位置生成。</p><img src="/anim/mvc_rig.png" alt="mvc_rig" style="zoom:50%;" /><h2 id="二、蒙皮数据生成">二、蒙皮数据生成</h2><p>独立复现论文 Frankenrigs: Building Character Rigs From Multiple Sources, 并将其改进版本用于权重匹配。主要包含权重映射(下图左)、权重优化(下图中)、平滑扩散(下图右)三步</p><p><img src="/anim/anim02_skinning.png" alt="anim02_skinning"></p><h2 id="三、姿态迁移">三、姿态迁移</h2><p>独立复现论文 Spatial Relationship Preserving Character Motion Adaptation, 并将其改进穿模版本应用于姿态迁移。主要思想是以关节点位置构建laplace矩阵，并以每个关节laplace坐标及自相交/近相加的顶点对距离为能量函数进行优化。</p><table><thead><tr><th>参考姿态</th><th>迁移姿态</th></tr></thead><tbody><tr><td><img src="/anim/anim02_refpose.png" alt="anim02_refpose" style="zoom:50%;" /></td><td><img src="/anim/anim01_tarpose.png" alt="anim01_tarpose" style="zoom:50%;" /></td></tr></tbody></table>]]></content>
     
     
     <summary type="html">复现并改进论文方法实现快速定位骨骼位置、生成蒙皮数据、迁移数据库姿态</summary>
@@ -97,7 +97,7 @@
     <link href="https://nko-y.github.io/2024/06/18/render02/"/>
     <id>https://nko-y.github.io/2024/06/18/render02/</id>
     <published>2024-06-18T06:23:35.000Z</published>
-    <updated>2024-07-14T17:30:32.873Z</updated>
+    <updated>2024-07-14T17:33:06.343Z</updated>
     
     <content type="html"><![CDATA[<h2 id="一、Hierarchy-Z-Buffer">一、Hierarchy Z-Buffer</h2><p>源码参见：<a href="https://github.com/nko-y/ZBuffer%EF%BC%8C%E4%B8%80%E4%BA%9B%E4%BD%BF%E7%94%A8%E4%BA%86Hierarchy">https://github.com/nko-y/ZBuffer，一些使用了Hierarchy</a> Z-Buffer渲染得到的结果</p><table><thead><tr><th>spot.obj</th><th>bunnyall.obj</th></tr></thead><tbody><tr><td><img src="/render/Hiz_result_1.png" alt="Hiz_result_1" style="zoom:50%;" /></td><td><img src="/render/Hiz_result_2.png" alt="Hiz_result_2" style="zoom:50%;" /></td></tr></tbody></table><h2 id="二、《FLYING-GLIDER》">二、《FLYING GLIDER》</h2><p>使用OpenGL编写的一个控制滑翔翼在山间漫游的小游戏，参见 <a href="https://github.com/nko-y/FLYING-GLIDER">https://github.com/nko-y/FLYING-GLIDER</a></p><ol><li>参考LearningOpenGL一书搭建游戏的框架，包括简单的渲染管线、obj模型读入、视角变换、纹理编辑等基本功能</li><li>实现了Blinn-Phong、Shadow Map+PCF、碰撞检测、雾化等基本算法和效果</li><li>利用三角形网格和HeightMap对地形进行生成</li></ol><p><img src="/render/extra2.png" alt="extra2"></p><h2 id="三、《Disco-Room》">三、《Disco Room》</h2><p>参见：<a href="https://www.shadertoy.com/view/ftSXDR">https://www.shadertoy.com/view/ftSXDR</a></p><p><img src="/render/discoroom.png" alt="discoroom"></p>]]></content>
     
