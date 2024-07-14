@@ -55,15 +55,21 @@
   </entry>
   
   <entry>
-    <title>anim03</title>
+    <title>【动画】基于骨骼的肌肉皮肤动画与Jiggle效果</title>
     <link href="https://nko-y.github.io/2024/07/01/anim03/"/>
     <id>https://nko-y.github.io/2024/07/01/anim03/</id>
     <published>2024-07-01T06:23:22.000Z</published>
-    <updated>2024-07-14T06:33:15.687Z</updated>
+    <updated>2024-07-14T16:20:56.238Z</updated>
+    
+    <content type="html"><![CDATA[<p>复刻类似战神一样基于骨骼的肌肉皮肤动画，并在UE5中实现肌肉的Jiggle效果</p><h2 id="一、肌肉骨骼组说明">一、肌肉骨骼组说明</h2><p>如下图所示，肌肉骨骼组大致由四部分组成：</p><ul><li>在图中以蓝色标识的组，包括OriginLoc、InsertionLoc、muscleOrigin与muscleInsertion</li><li>在图中以绿色标识的组。包括muscleBase和muscleTip</li></ul><p>以上两组用于模拟肌肉两端，也就是它们会随着基础骨骼运动而发生位移。</p><p>此外，以下两组用于模拟肌肉中心：</p><ul><li><p>在图中以红色标识的组，包括muscleDriven</p></li><li><p>在图中以黄色标识的组，包括center_Loc与muscleJnt</p></li></ul><p>当用于模拟肌肉两端的组发生位移时，这两组将会随之进行位移和放缩，从而模拟肌肉中心的拉伸和挤压</p><p><img src="/anim/anim03_joint.png" alt="anim03_joint"></p>]]></content>
+    
+    
+    <summary type="html">复刻类似战神一样基于骨骼的肌肉皮肤动画，并在UE5中实现肌肉的Jiggle效果</summary>
     
     
     
     
+    <category term="动画" scheme="https://nko-y.github.io/tags/%E5%8A%A8%E7%94%BB/"/>
     
   </entry>
   
