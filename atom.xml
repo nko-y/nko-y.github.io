@@ -59,7 +59,7 @@
     <link href="https://nko-y.github.io/2024/07/01/anim03/"/>
     <id>https://nko-y.github.io/2024/07/01/anim03/</id>
     <published>2024-07-01T06:23:22.000Z</published>
-    <updated>2024-07-14T16:46:39.514Z</updated>
+    <updated>2024-07-14T17:11:16.525Z</updated>
     
     <content type="html"><![CDATA[<p>复刻类似战神一样基于骨骼的肌肉皮肤动画，并在UE5中实现肌肉的Jiggle效果</p><h2 id="一、肌肉骨骼组说明">一、肌肉骨骼组说明</h2><p>如下图所示，肌肉骨骼组大致由四部分组成：</p><ul><li>在图中以蓝色标识的组，包括OriginLoc、InsertionLoc、muscleOrigin与muscleInsertion</li><li>在图中以绿色标识的组。包括muscleBase和muscleTip</li></ul><p>以上两组用于模拟肌肉两端，也就是它们会随着基础骨骼运动而发生位移。</p><p>此外，以下两组用于模拟肌肉中心：</p><ul><li><p>在图中以红色标识的组，包括muscleDriven</p></li><li><p>在图中以黄色标识的组，包括center_Loc与muscleJnt</p></li></ul><p>当用于模拟肌肉两端的组发生位移时，这两组将会随之进行位移和放缩，从而模拟肌肉中心的拉伸和挤压</p><p><img src="/anim/anim03_joint.png" alt="anim03_joint"></p><h2 id="二、上身肌肉组生成及迁移">二、上身肌肉组生成及迁移</h2><p>参考战神实现上半身的肌肉骨骼组</p><table><thead><tr><th>肌肉骨骼组</th><th>绑定示意</th></tr></thead><tbody><tr><td><img src="/anim/anim03_musclegroup.png" alt="anim03_musclegroup" style="zoom:50%;" /></td><td><img src="/anim/anim03_all.png" alt="anim03_all" style="zoom:50%;" /></td></tr></tbody></table><p>该肌肉骨骼组根据迁移算法可自由迁移至其他角色</p><img src="/anim/anim03_transfer.gif" alt="anim03_transfer" style="zoom:80%;" /><h2 id="三、在UE5中实现肌肉骨骼约束及Jiggle效果">三、在UE5中实现肌肉骨骼约束及Jiggle效果</h2><p>参考 <a href="https://zhuanlan.zhihu.com/p/38030856">https://zhuanlan.zhihu.com/p/38030856</a> 专栏实现肌肉运动的效果</p><p><img src="/anim/anim03_video_UE.gif" alt="anim03_video_UE"></p>]]></content>
     
@@ -97,10 +97,12 @@
     <link href="https://nko-y.github.io/2024/06/18/render02/"/>
     <id>https://nko-y.github.io/2024/06/18/render02/</id>
     <published>2024-06-18T06:23:35.000Z</published>
-    <updated>2024-07-14T17:00:54.084Z</updated>
+    <updated>2024-07-14T17:11:38.829Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、Hierarchy-Z-Buffer">一、Hierarchy Z-Buffer</h2><h2 id="二、《FLYING-GLIDER》">二、《FLYING GLIDER》</h2><p>使用OpenGL编写的一个控制滑翔翼在山间漫游的小游戏，参见 <a href="https://github.com/nko-y/FLYING-GLIDER">https://github.com/nko-y/FLYING-GLIDER</a></p><ol><li>参考LearningOpenGL一书搭建游戏的框架，包括简单的渲染管线、obj模型读入、视角变换、纹理编辑等基本功能</li><li>实现了Blinn-Phong、Shadow Map+PCF、碰撞检测、雾化等基本算法和效果</li><li>利用三角形网格和HeightMap对地形进行生成</li></ol><p><img src="/render/extra2.png" alt="extra2"></p><h2 id="三、《Disco-Room》">三、《Disco Room》</h2><p>参见：<a href="https://www.shadertoy.com/view/ftSXDR">https://www.shadertoy.com/view/ftSXDR</a></p>]]></content>
     
     
-    <summary type="html">包括层次Z-Buffer实现，OpenGL编写的漫游小游戏等</summary>
+    <summary type="html">包括层次Z-Buffer实现，OpenGL编写的漫游小游戏,shadertoy上的DiscoRoom小场景</summary>
     
     
     
